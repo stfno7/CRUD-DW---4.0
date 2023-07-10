@@ -1,0 +1,92 @@
+<!-- Stefano Parrachini - UNGS - 1º Examen -- Desarrollo Web Nivel 2-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argentina Programa CRUD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://loodibee.com/wp-content/uploads/Under-Armour-Emblem-300x300.png">
+</head>
+<body>
+
+    <header id="header">
+        <div>
+        <h1><span>C</span>lub UA</h1>
+        </div>
+        <div>
+            <ul>
+                <a href="#"><li>Almacenamiento</li></a>
+                <a href="#"><li>Clientes</li></a>
+                <a href="index.html"><li id="active">Administrar</li></a>
+            </ul>
+        </div>
+    </header>
+
+    <section id="section">
+
+        <div id="afiliacionSocio">
+            <h2>Afiliación</h2>
+            <form action="" id="formulario-afiliacion">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+
+                <label for="categoria">Categoría:</label>
+                <select id="categoria" required>
+                    <option value="Cadete">Cadete</option>
+                    <option value="Socio pleno">Socio pleno</option>
+                    <option value="Adherente">Adherente</option>
+                </select>
+            </form>
+        </div>
+
+        
+        <div id="modificarSocio">
+            <h2>Modificar datos</h2>
+            <form action="" id="formulario-modificacion">
+                <label for="nombre-modificacion">Nuevo Nombre:</label>
+                <input type="text" id="nombre-modificacion" required>
+
+                <label for="categoria-modificacion">Nueva Categoría:</label>
+                <select id="categoria-modificacion" required>
+                    <option value="Cadete">Cadete</option>
+                    <option value="Socio pleno">Socio pleno</option>
+                    <option value="Adherente">Adherente</option>
+                </select>
+
+                <button type="submit">Modificar</button>
+            </form>
+        </div>
+
+
+        <div id="pago">
+            <h2>Pago mensual</h2>
+            <form action="" id="formulario-pago">
+                <label for="pago-realizado">Pago Realizado:</label>
+                <select id="pago-realizado" required>
+                    <option value="true">Sí</option>
+                    <option value="false">No</option>
+                </select>
+            </form>
+        </div>
+
+        <div id="acceso">
+            <h2>Acceso</h2>
+            <form action="" id="formulario-acceso">
+                <select id="indice-acceso" required>
+                    <option value="autorizar">Autorizar acceso</option>
+                    <option value="denegar">Denegar acceso</option>
+                </select>
+            </form>
+        </div>
+
+
+        <button id="btnAfiliar">Afiliar</button>
+
+        
+
+        <div id="lista-socios"></div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
